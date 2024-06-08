@@ -4,12 +4,23 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "keygen": "ts-node ./keygen.ts",
+    "airdrop": "ts-node ./airdrop.ts",
+    "spl_init": "ts-node ./spl_init.ts",
+    "spl_mint": "ts-node ./spl_mint.ts",
+    "spl_transfer": "ts-node ./spl_transfer.ts"
   },
   "keywords": [],
-  "author": "",
+  "author": "difotech <vitodifonzo@difotech.it>",
   "license": "ISC",
   "dependencies": {
-    "@solana/web3.js": "^1.92.3"
-  }
+    "@solana/spl-token": "^0.4.6",
+    "@solana/web3.js": "^1.92.3",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2"
+  },
+  "repository": "https://github.com/Difotech/Esame.git"
 }
